@@ -29,22 +29,30 @@ async function render(){
         contadorLikes.setAttribute("id", "likes")
         contadorLikes.appendChild(document.createTextNode(like))
 
+        let imgLike = document.createElement("img")
+        imgLike.setAttribute("id", "imgButton")
+        imgLike.setAttribute("src", "icons/like.png")
+
         let buttonLike = document.createElement("button")
         buttonLike.setAttribute("onClick", `vote(this.id, "${_id}")`)
         buttonLike.setAttribute("class", "btn")
         buttonLike.setAttribute("id", "like")
-        buttonLike.appendChild(document.createTextNode("✅"))
+        buttonLike.appendChild(imgLike)
 
         let contadorDeslikes = document.createElement('h1')
         contadorDeslikes.setAttribute("class", "contadores")
         contadorDeslikes.setAttribute("id", "deslikes")
         contadorDeslikes.appendChild(document.createTextNode(deslike))
 
+        let imgDeslike = document.createElement("img")
+        imgDeslike.setAttribute("id", "imgButton")
+        imgDeslike.setAttribute("src", "icons/deslike.png")
+
         let buttonDeslike = document.createElement("button")
         buttonDeslike.setAttribute("onClick",`vote(this.id, "${_id}")`)
         buttonDeslike.setAttribute("class", "btn")
         buttonDeslike.setAttribute("id", "deslike")
-        buttonDeslike.appendChild(document.createTextNode("❌"))
+        buttonDeslike.appendChild(imgDeslike)
         
         divInterna.appendChild(youtube)
         divInterna.appendChild(linkElement)

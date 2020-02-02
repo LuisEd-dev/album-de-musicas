@@ -53,7 +53,8 @@ ul{
 .btn{
     float: right;
     margin-top: 36px;
-    background-color: dimgray;
+    background: none;
+    border: none;
 }
 
 #like{
@@ -137,4 +138,8 @@ ul{
 }
 .seta:hover{
     color: beige;
+}
+#imgButton{
+    width: 20px;
+    height: 20px;
 }
