@@ -7,7 +7,7 @@ async function render(){
         var lista = document.getElementById('list')
 
         let divsVerticais = document.createElement('div')
-        divsVerticais.setAttribute('class', 'divsVerticais')
+        divsVerticais.setAttribute('class', 'divsItens')
 
         let divInterna = document.createElement("div")
         divInterna.setAttribute("class", "interno")

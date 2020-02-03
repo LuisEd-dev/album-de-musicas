@@ -6,7 +6,7 @@ ul{
     list-style: none;
     padding: 0;
 }
-.divsVerticais{
+.divsItens{
     width: auto;
     height: 60px;
     margin: 5px;
@@ -16,7 +16,7 @@ ul{
     border-width: 3px;
     border-style: solid;
 }
-.divsVerticais:hover{
+.divsItens:hover{
     border-color: beige;
 }
 .interno{
