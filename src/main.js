@@ -1,5 +1,10 @@
 var apilink = 'http://api-luised-dev-com.umbler.net/api/videos'
-
+function darktheme(){
+    const css = document.getElementById("css").setAttribute("href", "css/dark.css")  
+}
+function ligththeme(){
+    const css = document.getElementById("css").setAttribute("href", "css/ligth.css")  
+}
 async function render(){
     const axi = await axios.get(apilink);
     for (data of axi.data){ 
@@ -83,5 +88,4 @@ async function vote(option, id){
         window.location.reload();
     }
 }
-
 render()

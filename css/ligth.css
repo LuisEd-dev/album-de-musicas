@@ -1,0 +1,145 @@
+body{
+    background-color: beige;
+}
+ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+.divsItens{
+    width: 32%;
+    height: 60px;
+    margin: 5px;
+    background-color: rgb(65, 59, 59);
+    float: left;
+    border-color: rgb(23, 22, 24);
+    border-width: 3px;
+    border-style: solid;
+}
+.divsItens:hover{
+    border-color: beige;
+}
+.interno{
+    width: 405px;
+}
+#ytplayer{
+    float: left;
+    width: 105px;
+    height: 60px
+}
+#ytplayer2{
+    width: 210px;
+    height: 120px;
+    height: auto;
+    margin: 5px;
+    border: black;
+    border-style: solid;
+}
+#ytplayer2:hover{
+    border-color: beige;
+}
+.text{
+    font-family: "Arial Narrow", Arial, sans-serif;
+    color: ivory;
+    float: left;
+    margin: auto;
+    margin-left: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.text:hover{
+    color: rgb(50, 7, 131);
+}
+.btn{
+    float: right;
+    margin-top: 36px;
+    background: none;
+    border: none;
+}
+
+#like{
+    color: rgb(29, 201, 29);
+}
+#deslike{
+    color: rgb(145, 16, 16);
+}
+.contadores{
+    float: right;
+    margin: 5px;
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+#title{
+    font-family: "Arial Narrow", Arial, sans-serif;
+    color: ivory;
+    font-size: 40px;
+}
+#divCentral{
+    width: 40%;
+    height: auto;
+    margin: 5px;
+    background-color: rgb(65, 59, 59);
+    border-color: rgb(23, 22, 24);
+    border-width: 3px;
+    border-style: solid;
+}
+.Textos{
+    font-family: "Arial Narrow", Arial, sans-serif;
+    color: ivory;
+    font-size: 20px;
+    float: left;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.inputText{
+    width: 80%;
+    float: right;
+    margin-right: 10px;
+}
+#divTitulo{
+    width: 210px;
+    height: auto;
+    float: left;
+}
+.buttons{
+    font-family: "Arial Narrow", Arial, sans-serif;
+    color: ivory;
+    font-weight: bold;
+    width: 20%;
+    height: 25px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    
+}
+#add{
+    background-color: rgb(60, 114, 7);
+}
+#delete{
+    background-color: rgb(124, 5, 5);
+}
+#clear{
+    background-color: gray;
+}
+.seta{
+    font-family: 'Righteous', cursive;
+    font-size: 60px;
+    position: fixed;
+    text-decoration: none;
+    color: black;
+}
+#setaVoltar{
+    float: left;
+}
+#setaIr{
+    margin: 10px;
+    right: 0px;
+    bottom: 0px;
+}
+.seta:hover{
+    color: beige;
+}
+#imgButton{
+    width: 20px;
+    height: 20px;
+}
