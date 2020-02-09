@@ -1,4 +1,5 @@
 var apilink = 'http://api-luised-dev-com.umbler.net/api/videos'
+
 async function add(){
     var response = await axios.get(apilink)
 
@@ -56,4 +57,10 @@ async function remove(){
 }
 function limpar(){
     document.getElementById("videos").innerHTML = ""
+}
+function darktheme(){
+    const css = document.getElementById("css").setAttribute("href", "css/dark.css")  
+}
+function ligththeme(){
+    const css = document.getElementById("css").setAttribute("href", "css/ligth.css")  
 }
