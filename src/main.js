@@ -84,9 +84,21 @@ async function vote(option, id){
     }
 }
 function darktheme(){
-    const css = document.getElementById("css").setAttribute("href", "css/dark.css")  
+    const css = document.getElementById("css").setAttribute("href", "css/dark.css")
+    var theme = "dark"
+    document.cookie = `theme=${theme}`;
+
 }
 function ligththeme(){
     const css = document.getElementById("css").setAttribute("href", "css/ligth.css")  
+    var theme = "ligth"
+    document.cookie = `theme=${theme}`;
+}
+if(document.cookie){
+    if(document.cookie == 'theme=ligth'){
+        ligththeme()
+    } else if(document.cookie == 'theme=dark'){
+        darktheme()
+    }
 }
 render()

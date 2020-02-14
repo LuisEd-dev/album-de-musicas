@@ -64,3 +64,10 @@ function darktheme(){
 function ligththeme(){
     const css = document.getElementById("css").setAttribute("href", "css/ligth.css")  
 }
+if(document.cookie){
+    if(document.cookie == 'theme=ligth'){
+        ligththeme()
+    } else if(document.cookie == 'theme=dark'){
+        darktheme()
+    }
+}
