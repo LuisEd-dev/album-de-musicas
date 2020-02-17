@@ -59,10 +59,14 @@ function limpar(){
     document.getElementById("videos").innerHTML = ""
 }
 function darktheme(){
-    const css = document.getElementById("css").setAttribute("href", "css/dark.css")  
+    document.getElementById("css").setAttribute("href", "css/dark.css")  
+    var theme = "dark"
+    document.cookie = `theme=${theme}`;
 }
 function ligththeme(){
-    const css = document.getElementById("css").setAttribute("href", "css/ligth.css")  
+    document.getElementById("css").setAttribute("href", "css/ligth.css") 
+    var theme = "ligth"
+    document.cookie = `theme=${theme}`;
 }
 if(document.cookie){
     if(document.cookie == 'theme=ligth'){
