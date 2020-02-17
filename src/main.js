@@ -86,18 +86,18 @@ async function vote(option, id){
 function darktheme(){
     document.getElementById("css").setAttribute("href", "css/dark.css")
     var theme = "dark"
-    document.cookie = `theme=${theme}`;
+    document.cookie = `theme=${theme}; path=/album-de-musicas`;
 
 }
 function ligththeme(){
     document.getElementById("css").setAttribute("href", "css/ligth.css")  
     var theme = "ligth"
-    document.cookie = `theme=${theme}`;
+    document.cookie = `theme=${theme}; path=/album-de-musicas`;
 }
 if(document.cookie){
-    if(document.cookie == 'theme=ligth'){
+    if(document.cookie.indexOf('theme=ligth') > -1){
         ligththeme()
-    } else if(document.cookie == 'theme=dark'){
+    } else if(document.cookie.indexOf('theme=dark') > -1){
         darktheme()
     }
 }
