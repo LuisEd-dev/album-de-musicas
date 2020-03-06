@@ -4,10 +4,13 @@ async function render(){
     const axi = await axios.get(apilink);
     for (data of axi.data){ 
         let { _id, title, link, like = 0, deslike = 0 } = data
-        var lista = document.getElementById('list')
+        var row = document.getElementsByClassName('row')[0]
 
-        let divsVerticais = document.createElement('div')
-        divsVerticais.setAttribute('class', 'divsItens')
+        let col = document.createElement('div')
+        col.setAttribute('class', 'col-lg-4')
+
+        let divsItens = document.createElement('div')
+        divsItens.setAttribute('class', 'divsItens')
 
         let divInterna = document.createElement("div")
         divInterna.setAttribute("class", "interno")
@@ -62,9 +65,11 @@ async function render(){
         divInterna.appendChild(contadorDeslikes)
         divInterna.appendChild(buttonDeslike)
 
-        divsVerticais.appendChild(divInterna)
+        divsItens.appendChild(divInterna)
 
-        lista.appendChild(divsVerticais)
+        col.appendChild(divsItens)
+
+        row.appendChild(col)
 
     };
 }
@@ -86,13 +91,13 @@ async function vote(option, id){
 function darktheme(){
     document.getElementById("css").setAttribute("href", "css/dark.css")
     var theme = "dark"
-    document.cookie = `theme=${theme}; path=/album-de-musicas`;
+    document.cookie = `theme=${theme}; path=/album-de-musicas-bootstrap`;
 
 }
 function ligththeme(){
     document.getElementById("css").setAttribute("href", "css/ligth.css")  
     var theme = "ligth"
-    document.cookie = `theme=${theme}; path=/album-de-musicas`;
+    document.cookie = `theme=${theme}; path=/album-de-musicas-bootstrap`;
 }
 if(document.cookie){
     if(document.cookie.indexOf('theme=ligth') > -1){

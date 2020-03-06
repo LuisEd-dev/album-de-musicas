@@ -61,12 +61,12 @@ function limpar(){
 function darktheme(){
     document.getElementById("css").setAttribute("href", "css/dark.css")  
     var theme = "dark"
-    document.cookie = `theme=${theme}; path=/album-de-musicas`;
+    document.cookie = `theme=${theme}; path=/album-de-musicas-bootstrap`;
 }
 function ligththeme(){
     document.getElementById("css").setAttribute("href", "css/ligth.css") 
     var theme = "ligth"
-    document.cookie = `theme=${theme}; path=/album-de-musicas`;
+    document.cookie = `theme=${theme}; path=/album-de-musicas-bootstrap`;
 }
 if(document.cookie){
     if(document.cookie.indexOf('theme=ligth') > -1){
