@@ -91,13 +91,13 @@ async function vote(option, id){
 function darktheme(){
     document.getElementById("css").setAttribute("href", "css/dark.css")
     var theme = "dark"
-    document.cookie = `theme=${theme}; path=/album-de-musicas-bootstrap`;
+    document.cookie = `theme=${theme}; path=/album-de-musicas`;
 
 }
 function ligththeme(){
     document.getElementById("css").setAttribute("href", "css/ligth.css")  
     var theme = "ligth"
-    document.cookie = `theme=${theme}; path=/album-de-musicas-bootstrap`;
+    document.cookie = `theme=${theme}; path=/album-de-musicas`;
 }
 if(document.cookie){
     if(document.cookie.indexOf('theme=ligth') > -1){
