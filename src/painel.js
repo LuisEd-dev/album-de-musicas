@@ -1,4 +1,4 @@
-var apilink = 'http://api-luised-dev-com.umbler.net/api/videos'
+var apilink = 'http://127.0.0.1/api/videos'
 
 async function add(){
     var response = await axios.get(apilink)
