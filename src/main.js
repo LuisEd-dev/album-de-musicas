@@ -1,4 +1,4 @@
-var apilink = 'http://127.0.0.1/api/videos'
+var apilink = 'http://127.0.0.1:3000/api/videos'
 
 async function render(){
     const axi = await axios.get(apilink);
